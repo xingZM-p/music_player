@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--在手机上需要用下面的语句设置它的尺寸-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <!-- no-referrer表示不要发送 HTTP Referer 首部。-->
+        <meta name='referrer' content='no-referrer'>
+        <!--在网页标题前添加一个小图标-->
+        <link rel='shortcut icon' href='img/pic.jpg'>
+        <title>激情岁月</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+       <div class='music-player'>
+           <header>
+                <div class='player-img'><img src='img/player.png'></div>
+                <span class='player-name'>某某云音乐</span>
+                <div class='header-search'>
+                    <input type="text" size="25" maxlength="50" value="搜索单曲歌手/专辑/歌单/用户">
+                </div>
+                <div class='header-control'>
+                    <button class='header-small'>—</button>
+                    <button class='header-resize'>口</button>
+                    <button clasll='header-close'>×</button>
+                </div>
+            </header>
+            <div class='content'>
+                <div class="record-wrapper" style="display: block;">
+                  <div class="record-bg mid">
+                    <div class="record-pic mid">
+                        <img src="img/pic.jpg" alt="唱片图片">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lyrics-wrapper">
+                  <ul class='lyrics'></ul>
+                </div>
+                <div class='content-control'>
+                    <button class='collect'><span>收 藏</span></button>
+                    <button class='loaddown'><span>下 载</span></button>
+                    <button class='share'><span>分 享</span></button>
+                </div>
+            </div>
+            <footer>
+                <!--设置控制键-->
+                <div class="btns">
+                  <div class="pause"><img src='img/暂停.png'></div>
+                  <div class="play"><img src='img/播放.png'></div>
+                  <div class="next"><img src='img/快进.png'></div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                  <div class="progress-btn"></div>
+                </div>
+                <!-- 播放时间 -->
+                <div class='music-currentTime'>00:00</div>
+                <!-- 播放总时间 -->
+                <div class='music-alltime'>04:00</div>
+                <div class='voice'>
+                    <img src='img/voice.png'>
+                </div>
+            </footer>
+            <audio id='music-audio'></audio>
+        </div>
+    </body>
+</html>
